@@ -132,19 +132,42 @@ class HomeScreen extends GetWidget<HomeController> {
                                                                         Alignment
                                                                             .topRight,
                                                                     child: Container(
+                                                                        width: getHorizontalSize(299.00),
                                                                         margin: getMargin(left: 10, top: 100, bottom: 100),
                                                                         decoration: AppDecoration.outlineBlack9003f.copyWith(borderRadius: BorderRadiusStyle.roundedBorder5),
-                                                                        child: Row(crossAxisAlignment: CrossAxisAlignment.end, mainAxisSize: MainAxisSize.max, children: [
-                                                                          Container(
-                                                                              height: getVerticalSize(22.00),
-                                                                              width: getHorizontalSize(158.00),
-                                                                              decoration: BoxDecoration(color: ColorConstant.lightGreenA700Bc, borderRadius: BorderRadius.circular(getHorizontalSize(5.00)), boxShadow: [
-                                                                                BoxShadow(color: ColorConstant.black9003f, spreadRadius: getHorizontalSize(2.00), blurRadius: getHorizontalSize(2.00), offset: Offset(0, 4))
-                                                                              ])),
-                                                                          Padding(
-                                                                              padding: getPadding(top: 7, bottom: 4),
-                                                                              child: Text("msg_55_de_progress".tr, overflow: TextOverflow.ellipsis, textAlign: TextAlign.left, style: AppStyle.txtNATS10.copyWith(height: 1.00)))
-                                                                        ])))
+                                                                        child: Column(mainAxisSize: MainAxisSize.min, crossAxisAlignment: CrossAxisAlignment.center, mainAxisAlignment: MainAxisAlignment.start, children: [
+                                                                          Align(
+                                                                              alignment: Alignment.centerLeft,
+                                                                              child: Container(
+                                                                                  height: getVerticalSize(22.00),
+                                                                                  width: getHorizontalSize(158.00),
+                                                                                  margin: getMargin(right: 141),
+                                                                                  decoration: BoxDecoration(color: ColorConstant.lightGreenA700Bc, borderRadius: BorderRadius.circular(getHorizontalSize(5.00)), boxShadow: [
+                                                                                    BoxShadow(color: ColorConstant.black9003f, spreadRadius: getHorizontalSize(2.00), blurRadius: getHorizontalSize(2.00), offset: Offset(0, 4))
+                                                                                  ])))
+                                                                        ]))),
+                                                                Align(
+                                                                    alignment:
+                                                                        Alignment
+                                                                            .topRight,
+                                                                    child: Container(
+                                                                        width: getHorizontalSize(
+                                                                            141.00),
+                                                                        margin: getMargin(
+                                                                            left:
+                                                                                10,
+                                                                            top:
+                                                                                101,
+                                                                            bottom:
+                                                                                101),
+                                                                        child: Text(
+                                                                            "msg_55_de_progress"
+                                                                                .tr,
+                                                                            maxLines:
+                                                                                null,
+                                                                            textAlign:
+                                                                                TextAlign.center,
+                                                                            style: AppStyle.txtNATS10.copyWith(height: 8.00))))
                                                               ]))),
                                                   Align(
                                                       alignment:

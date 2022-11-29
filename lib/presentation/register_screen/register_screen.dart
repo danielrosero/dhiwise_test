@@ -251,80 +251,116 @@ class RegisterScreen extends GetWidget<RegisterController> {
                                                   Align(
                                                       alignment:
                                                           Alignment.center,
-                                                      child: Padding(
-                                                          padding: getPadding(
+                                                      child: Container(
+                                                          height:
+                                                              getVerticalSize(
+                                                                  137.00),
+                                                          width:
+                                                              getHorizontalSize(
+                                                                  165.00),
+                                                          margin: getMargin(
                                                               left: 11,
                                                               top: 18,
                                                               right: 11),
-                                                          child: ClipRRect(
-                                                              borderRadius:
-                                                                  BorderRadius.circular(
-                                                                      getHorizontalSize(
-                                                                          50.00)),
-                                                              child: CommonImageView(
-                                                                  imagePath:
-                                                                      ImageConstant
-                                                                          .imgEllipse,
-                                                                  height: getSize(
-                                                                      100.00),
-                                                                  width: getSize(
-                                                                      100.00),
-                                                                  fit: BoxFit
-                                                                      .cover)))),
-                                                  Align(
-                                                      alignment:
-                                                          Alignment.center,
-                                                      child: Padding(
-                                                          padding: getPadding(
-                                                              left: 11,
-                                                              top: 8,
-                                                              right: 11),
-                                                          child: Text(
-                                                              "msg_escolha_uma_fot"
-                                                                  .tr,
-                                                              overflow:
-                                                                  TextOverflow
-                                                                      .ellipsis,
-                                                              textAlign:
-                                                                  TextAlign
-                                                                      .left,
-                                                              style: AppStyle
-                                                                  .txtNATS18
-                                                                  .copyWith(
-                                                                      height:
-                                                                          1.00)))),
+                                                          child: Stack(
+                                                              alignment: Alignment
+                                                                  .bottomCenter,
+                                                              children: [
+                                                                Align(
+                                                                    alignment:
+                                                                        Alignment
+                                                                            .topCenter,
+                                                                    child: Padding(
+                                                                        padding: getPadding(
+                                                                            left:
+                                                                                32,
+                                                                            right:
+                                                                                32,
+                                                                            bottom:
+                                                                                10),
+                                                                        child: ClipRRect(
+                                                                            borderRadius: BorderRadius.circular(getHorizontalSize(
+                                                                                50.00)),
+                                                                            child: CommonImageView(
+                                                                                imagePath: ImageConstant.imgEllipse,
+                                                                                height: getSize(100.00),
+                                                                                width: getSize(100.00),
+                                                                                fit: BoxFit.cover)))),
+                                                                Align(
+                                                                    alignment:
+                                                                        Alignment
+                                                                            .bottomCenter,
+                                                                    child: Container(
+                                                                        width: getHorizontalSize(
+                                                                            165.00),
+                                                                        margin: getMargin(
+                                                                            top:
+                                                                                10),
+                                                                        child: Text(
+                                                                            "msg_escolha_uma_fot"
+                                                                                .tr,
+                                                                            maxLines:
+                                                                                null,
+                                                                            textAlign:
+                                                                                TextAlign.center,
+                                                                            style: AppStyle.txtNATS18.copyWith(height: 4.44))))
+                                                              ]))),
                                                   Align(
                                                       alignment:
                                                           Alignment.center,
                                                       child: Container(
+                                                          height:
+                                                              getVerticalSize(
+                                                                  51.00),
+                                                          width:
+                                                              getHorizontalSize(
+                                                                  110.00),
                                                           margin: getMargin(
                                                               left: 11,
-                                                              top: 33,
+                                                              top: 11,
                                                               right: 11,
-                                                              bottom: 47),
-                                                          padding: getPadding(
-                                                              left: 11,
-                                                              top: 2,
-                                                              right: 11,
-                                                              bottom: 2),
-                                                          decoration: AppDecoration
-                                                              .txtOutlineBlack9003f1
-                                                              .copyWith(
-                                                                  borderRadius:
-                                                                      BorderRadiusStyle
-                                                                          .txtRoundedBorder5),
-                                                          child: Text(
-                                                              "lbl_confirmar"
-                                                                  .tr,
-                                                              overflow:
-                                                                  TextOverflow
-                                                                      .ellipsis,
-                                                              textAlign: TextAlign
-                                                                  .left,
-                                                              style: AppStyle
-                                                                  .txtNATS24
-                                                                  .copyWith(
-                                                                      height: 1.00))))
+                                                              bottom: 36),
+                                                          child: Stack(
+                                                              alignment:
+                                                                  Alignment
+                                                                      .center,
+                                                              children: [
+                                                                Align(
+                                                                    alignment:
+                                                                        Alignment
+                                                                            .centerLeft,
+                                                                    child: Container(
+                                                                        height: getVerticalSize(30.00),
+                                                                        width: getHorizontalSize(110.00),
+                                                                        margin: getMargin(top: 10, bottom: 10),
+                                                                        decoration: BoxDecoration(color: ColorConstant.lightGreenA7007c, borderRadius: BorderRadius.circular(getHorizontalSize(5.00)), boxShadow: [
+                                                                          BoxShadow(
+                                                                              color: ColorConstant.black9003f,
+                                                                              spreadRadius: getHorizontalSize(2.00),
+                                                                              blurRadius: getHorizontalSize(2.00),
+                                                                              offset: Offset(0, 4))
+                                                                        ]))),
+                                                                Align(
+                                                                    alignment:
+                                                                        Alignment
+                                                                            .center,
+                                                                    child: Container(
+                                                                        width: getHorizontalSize(
+                                                                            86.00),
+                                                                        margin: getMargin(
+                                                                            left:
+                                                                                11,
+                                                                            right:
+                                                                                11),
+                                                                        child: Text(
+                                                                            "lbl_confirmar"
+                                                                                .tr,
+                                                                            maxLines:
+                                                                                null,
+                                                                            textAlign:
+                                                                                TextAlign.center,
+                                                                            style: AppStyle.txtNATS24.copyWith(height: 3.33))))
+                                                              ])))
                                                 ]))),
                                     Align(
                                         alignment: Alignment.topLeft,

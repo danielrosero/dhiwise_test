@@ -1,6 +1,5 @@
 import 'controller/login_controller.dart';
 import 'package:application/core/app_export.dart';
-import 'package:application/widgets/custom_button.dart';
 import 'package:application/widgets/custom_icon_button.dart';
 import 'package:flutter/material.dart';
 import 'package:application/presentation/login_i_dialog/login_i_dialog.dart';
@@ -86,58 +85,150 @@ class LoginScreen extends GetWidget<LoginController> {
                                                                         width: getHorizontalSize(
                                                                             43.00)))
                                                               ]))),
-                                                  CustomButton(
-                                                      width: 230,
-                                                      text: "lbl_login".tr,
-                                                      margin: getMargin(
-                                                          left: 68,
-                                                          top: 52,
-                                                          right: 62),
-                                                      onTap: onTapLogin,
-                                                      alignment:
-                                                          Alignment.center),
                                                   Align(
                                                       alignment:
                                                           Alignment.center,
-                                                      child: Padding(
-                                                          padding: getPadding(
+                                                      child: Container(
+                                                          height:
+                                                              getVerticalSize(
+                                                                  90.00),
+                                                          width:
+                                                              getHorizontalSize(
+                                                                  230.00),
+                                                          margin: getMargin(
                                                               left: 68,
-                                                              top: 8,
-                                                              right: 68),
-                                                          child: Text(
-                                                              "msg_esqueceu_a_senh"
-                                                                  .tr,
-                                                              overflow:
-                                                                  TextOverflow
-                                                                      .ellipsis,
-                                                              textAlign:
-                                                                  TextAlign
-                                                                      .left,
-                                                              style: AppStyle
-                                                                  .txtNATS18
-                                                                  .copyWith(
-                                                                      height:
-                                                                          1.00)))),
-                                                  CustomButton(
-                                                      width: 230,
-                                                      text:
-                                                          "msg_cadastre_se_ago"
-                                                              .tr,
-                                                      margin: getMargin(
-                                                          left: 68,
-                                                          top: 34,
-                                                          right: 62),
-                                                      onTap:
-                                                          onTapCadastreseagoraOne,
+                                                              top: 52,
+                                                              right: 62),
+                                                          child: Stack(
+                                                              alignment:
+                                                                  Alignment
+                                                                      .topCenter,
+                                                              children: [
+                                                                Align(
+                                                                    alignment:
+                                                                        Alignment
+                                                                            .topLeft,
+                                                                    child: GestureDetector(
+                                                                        onTap: () {
+                                                                          onTapRectangleTwo();
+                                                                        },
+                                                                        child: Container(
+                                                                            height: getVerticalSize(54.00),
+                                                                            width: getHorizontalSize(230.00),
+                                                                            margin: getMargin(bottom: 10),
+                                                                            decoration: BoxDecoration(color: ColorConstant.gray400, borderRadius: BorderRadius.circular(getHorizontalSize(5.00)), boxShadow: [
+                                                                              BoxShadow(color: ColorConstant.black9003f, spreadRadius: getHorizontalSize(2.00), blurRadius: getHorizontalSize(2.00), offset: Offset(0, 4))
+                                                                            ])))),
+                                                                Align(
+                                                                    alignment:
+                                                                        Alignment
+                                                                            .topCenter,
+                                                                    child: Container(
+                                                                        width: getHorizontalSize(
+                                                                            47.00),
+                                                                        margin: getMargin(
+                                                                            left:
+                                                                                91,
+                                                                            top:
+                                                                                3,
+                                                                            right:
+                                                                                91,
+                                                                            bottom:
+                                                                                10),
+                                                                        child: Text(
+                                                                            "lbl_login"
+                                                                                .tr,
+                                                                            maxLines:
+                                                                                null,
+                                                                            textAlign:
+                                                                                TextAlign.center,
+                                                                            style: AppStyle.txtNATS24.copyWith(height: 3.33)))),
+                                                                Align(
+                                                                    alignment:
+                                                                        Alignment
+                                                                            .bottomCenter,
+                                                                    child: Container(
+                                                                        width: getHorizontalSize(
+                                                                            92.00),
+                                                                        margin: getMargin(
+                                                                            left:
+                                                                                68,
+                                                                            top:
+                                                                                10,
+                                                                            right:
+                                                                                68),
+                                                                        child: Text(
+                                                                            "lbl_test_getronics"
+                                                                                .tr,
+                                                                            maxLines:
+                                                                                null,
+                                                                            textAlign:
+                                                                                TextAlign.center,
+                                                                            style: AppStyle.txtNATS18.copyWith(height: 4.44))))
+                                                              ]))),
+                                                  Align(
                                                       alignment:
-                                                          Alignment.center),
+                                                          Alignment.center,
+                                                      child: Container(
+                                                          height:
+                                                              getVerticalSize(
+                                                                  54.00),
+                                                          width:
+                                                              getHorizontalSize(
+                                                                  230.00),
+                                                          margin: getMargin(
+                                                              left: 68,
+                                                              top: 23,
+                                                              right: 62),
+                                                          child: Stack(
+                                                              alignment: Alignment
+                                                                  .bottomCenter,
+                                                              children: [
+                                                                Align(
+                                                                    alignment:
+                                                                        Alignment
+                                                                            .centerLeft,
+                                                                    child: GestureDetector(
+                                                                        onTap: () {
+                                                                          onTapRectangleThree();
+                                                                        },
+                                                                        child: Container(
+                                                                            height: getVerticalSize(54.00),
+                                                                            width: getHorizontalSize(230.00),
+                                                                            margin: getMargin(bottom: 1),
+                                                                            decoration: BoxDecoration(color: ColorConstant.gray400, borderRadius: BorderRadius.circular(getHorizontalSize(5.00)), boxShadow: [
+                                                                              BoxShadow(color: ColorConstant.black9003f, spreadRadius: getHorizontalSize(2.00), blurRadius: getHorizontalSize(2.00), offset: Offset(0, 4))
+                                                                            ])))),
+                                                                Align(
+                                                                    alignment:
+                                                                        Alignment
+                                                                            .bottomCenter,
+                                                                    child: Container(
+                                                                        width: getHorizontalSize(
+                                                                            160.00),
+                                                                        margin: getMargin(
+                                                                            left:
+                                                                                34,
+                                                                            top:
+                                                                                10,
+                                                                            right:
+                                                                                34),
+                                                                        child: Text(
+                                                                            "msg_cadastre_se_ago"
+                                                                                .tr,
+                                                                            maxLines:
+                                                                                null,
+                                                                            textAlign:
+                                                                                TextAlign.center,
+                                                                            style: AppStyle.txtNATS24.copyWith(height: 3.33))))
+                                                              ]))),
                                                   Align(
                                                       alignment:
                                                           Alignment.centerLeft,
                                                       child: Padding(
                                                           padding: getPadding(
                                                               left: 68,
-                                                              top: 32,
+                                                              top: 31,
                                                               right: 68,
                                                               bottom: 93),
                                                           child: Row(
@@ -204,7 +295,7 @@ class LoginScreen extends GetWidget<LoginController> {
                 ]))));
   }
 
-  onTapLogin() {
+  onTapRectangleTwo() {
     Get.defaultDialog(
       title: '',
       backgroundColor: Colors.transparent,
@@ -216,7 +307,7 @@ class LoginScreen extends GetWidget<LoginController> {
     );
   }
 
-  onTapCadastreseagoraOne() {
+  onTapRectangleThree() {
     Get.toNamed(AppRoutes.registerScreen);
   }
 
