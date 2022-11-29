@@ -97,28 +97,50 @@ class LoginIDialog extends StatelessWidget {
                           ]))),
               Align(
                   alignment: Alignment.center,
-                  child: GestureDetector(
-                      onTap: () {
-                        onTapTxtEntrar();
-                      },
-                      child: Container(
-                          margin: getMargin(
-                              left: 93, top: 49, right: 93, bottom: 5),
-                          padding: getPadding(
-                              left: 28, top: 1, right: 28, bottom: 1),
-                          decoration: AppDecoration.txtOutlineBlack9003f1
-                              .copyWith(
-                                  borderRadius:
-                                      BorderRadiusStyle.txtRoundedBorder5),
-                          child: Text("lbl_entrar".tr,
-                              overflow: TextOverflow.ellipsis,
-                              textAlign: TextAlign.left,
-                              style:
-                                  AppStyle.txtNATS24.copyWith(height: 1.00)))))
+                  child: Container(
+                      height: getVerticalSize(51.00),
+                      width: getHorizontalSize(110.00),
+                      margin:
+                          getMargin(left: 93, top: 39, right: 93, bottom: 5),
+                      child: Stack(alignment: Alignment.center, children: [
+                        Align(
+                            alignment: Alignment.topLeft,
+                            child: GestureDetector(
+                                onTap: () {
+                                  onTapRectangleTwelve();
+                                },
+                                child: Container(
+                                    height: getVerticalSize(30.00),
+                                    width: getHorizontalSize(110.00),
+                                    margin: getMargin(top: 9, bottom: 10),
+                                    decoration: BoxDecoration(
+                                        color: ColorConstant.lightGreenA7007c,
+                                        borderRadius: BorderRadius.circular(
+                                            getHorizontalSize(5.00)),
+                                        boxShadow: [
+                                          BoxShadow(
+                                              color: ColorConstant.black9003f,
+                                              spreadRadius:
+                                                  getHorizontalSize(2.00),
+                                              blurRadius:
+                                                  getHorizontalSize(2.00),
+                                              offset: Offset(0, 4))
+                                        ])))),
+                        Align(
+                            alignment: Alignment.center,
+                            child: Container(
+                                width: getHorizontalSize(52.00),
+                                margin: getMargin(left: 29, right: 28),
+                                child: Text("lbl_entrar".tr,
+                                    maxLines: null,
+                                    textAlign: TextAlign.center,
+                                    style: AppStyle.txtNATS24
+                                        .copyWith(height: 3.33))))
+                      ])))
             ]));
   }
 
-  onTapTxtEntrar() {
+  onTapRectangleTwelve() {
     Get.toNamed(AppRoutes.homeScreen);
   }
 }

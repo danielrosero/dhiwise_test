@@ -4,6 +4,7 @@ final Map<String, String> enUs = {
   "msg_cadastre_se_ago": "Cadastre-se agora!",
   "msg_55_de_progress": "55% de progresso na semana, parabéns!",
   "lbl_yoga_iii": "Yoga III",
+  "lbl_test_getronics": "Test Getronics",
   "msg_insira_os_seus": "Insira os seus dados:",
   "lbl_home": "Home",
   "lbl_alongamentos": "Alongamentos",

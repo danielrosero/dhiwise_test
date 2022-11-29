@@ -35,14 +35,15 @@ class OptionsDialog extends StatelessWidget {
                       child: Stack(alignment: Alignment.centerLeft, children: [
                         Align(
                             alignment: Alignment.bottomCenter,
-                            child: Padding(
-                                padding: getPadding(
-                                    left: 104, top: 15, right: 104, bottom: 15),
+                            child: Container(
+                                width: getHorizontalSize(82.00),
+                                margin: getMargin(
+                                    left: 104, top: 10, right: 104, bottom: 4),
                                 child: Text("lbl_medita_o_i".tr,
-                                    overflow: TextOverflow.ellipsis,
-                                    textAlign: TextAlign.left,
+                                    maxLines: null,
+                                    textAlign: TextAlign.center,
                                     style: AppStyle.txtNATS20
-                                        .copyWith(height: 1.00)))),
+                                        .copyWith(height: 4.00)))),
                         Align(
                             alignment: Alignment.centerLeft,
                             child: GestureDetector(
@@ -66,14 +67,15 @@ class OptionsDialog extends StatelessWidget {
                       child: Stack(alignment: Alignment.centerLeft, children: [
                         Align(
                             alignment: Alignment.bottomCenter,
-                            child: Padding(
-                                padding: getPadding(
-                                    left: 101, top: 15, right: 101, bottom: 15),
+                            child: Container(
+                                width: getHorizontalSize(86.00),
+                                margin: getMargin(
+                                    left: 101, top: 10, right: 101, bottom: 4),
                                 child: Text("lbl_medita_o_ii".tr,
-                                    overflow: TextOverflow.ellipsis,
-                                    textAlign: TextAlign.left,
+                                    maxLines: null,
+                                    textAlign: TextAlign.center,
                                     style: AppStyle.txtNATS20
-                                        .copyWith(height: 1.00)))),
+                                        .copyWith(height: 4.00)))),
                         Align(
                             alignment: Alignment.centerLeft,
                             child: Container(
@@ -93,14 +95,15 @@ class OptionsDialog extends StatelessWidget {
                       child: Stack(alignment: Alignment.centerLeft, children: [
                         Align(
                             alignment: Alignment.bottomCenter,
-                            child: Padding(
-                                padding: getPadding(
-                                    left: 123, top: 15, right: 123, bottom: 15),
+                            child: Container(
+                                width: getHorizontalSize(44.00),
+                                margin: getMargin(
+                                    left: 123, top: 10, right: 123, bottom: 3),
                                 child: Text("lbl_yoga_i".tr,
-                                    overflow: TextOverflow.ellipsis,
-                                    textAlign: TextAlign.left,
+                                    maxLines: null,
+                                    textAlign: TextAlign.center,
                                     style: AppStyle.txtNATS20
-                                        .copyWith(height: 1.00)))),
+                                        .copyWith(height: 4.00)))),
                         Align(
                             alignment: Alignment.centerLeft,
                             child: Container(
@@ -120,14 +123,15 @@ class OptionsDialog extends StatelessWidget {
                       child: Stack(alignment: Alignment.centerLeft, children: [
                         Align(
                             alignment: Alignment.bottomCenter,
-                            child: Padding(
-                                padding: getPadding(
-                                    left: 120, top: 15, right: 120, bottom: 15),
+                            child: Container(
+                                width: getHorizontalSize(48.00),
+                                margin: getMargin(
+                                    left: 120, top: 10, right: 120, bottom: 3),
                                 child: Text("lbl_yoga_ii".tr,
-                                    overflow: TextOverflow.ellipsis,
-                                    textAlign: TextAlign.left,
+                                    maxLines: null,
+                                    textAlign: TextAlign.center,
                                     style: AppStyle.txtNATS20
-                                        .copyWith(height: 1.00)))),
+                                        .copyWith(height: 4.00)))),
                         Align(
                             alignment: Alignment.centerLeft,
                             child: Container(
@@ -147,14 +151,15 @@ class OptionsDialog extends StatelessWidget {
                       child: Stack(alignment: Alignment.centerLeft, children: [
                         Align(
                             alignment: Alignment.bottomCenter,
-                            child: Padding(
-                                padding: getPadding(
-                                    left: 119, top: 15, right: 119, bottom: 15),
+                            child: Container(
+                                width: getHorizontalSize(52.00),
+                                margin: getMargin(
+                                    left: 119, top: 10, right: 119, bottom: 3),
                                 child: Text("lbl_yoga_iii".tr,
-                                    overflow: TextOverflow.ellipsis,
-                                    textAlign: TextAlign.left,
+                                    maxLines: null,
+                                    textAlign: TextAlign.center,
                                     style: AppStyle.txtNATS20
-                                        .copyWith(height: 1.00)))),
+                                        .copyWith(height: 4.00)))),
                         Align(
                             alignment: Alignment.centerLeft,
                             child: Container(
@@ -174,14 +179,15 @@ class OptionsDialog extends StatelessWidget {
                       child: Stack(alignment: Alignment.centerLeft, children: [
                         Align(
                             alignment: Alignment.center,
-                            child: Padding(
-                                padding: getPadding(
-                                    left: 40, top: 18, right: 40, bottom: 17),
+                            child: Container(
+                                width: getHorizontalSize(94.00),
+                                margin: getMargin(
+                                    left: 40, top: 7, right: 40, bottom: 5),
                                 child: Text("lbl_relaxamento".tr,
-                                    overflow: TextOverflow.ellipsis,
-                                    textAlign: TextAlign.left,
+                                    maxLines: null,
+                                    textAlign: TextAlign.center,
                                     style: AppStyle.txtNATS20
-                                        .copyWith(height: 1.00)))),
+                                        .copyWith(height: 4.00)))),
                         Align(
                             alignment: Alignment.centerLeft,
                             child: Container(
@@ -201,14 +207,15 @@ class OptionsDialog extends StatelessWidget {
                       child: Stack(alignment: Alignment.centerLeft, children: [
                         Align(
                             alignment: Alignment.bottomCenter,
-                            child: Padding(
-                                padding: getPadding(
-                                    left: 93, top: 15, right: 93, bottom: 15),
+                            child: Container(
+                                width: getHorizontalSize(105.00),
+                                margin: getMargin(
+                                    left: 93, top: 10, right: 93, bottom: 4),
                                 child: Text("lbl_alongamentos".tr,
-                                    overflow: TextOverflow.ellipsis,
-                                    textAlign: TextAlign.left,
+                                    maxLines: null,
+                                    textAlign: TextAlign.center,
                                     style: AppStyle.txtNATS20
-                                        .copyWith(height: 1.00)))),
+                                        .copyWith(height: 4.00)))),
                         Align(
                             alignment: Alignment.centerLeft,
                             child: Container(
@@ -225,14 +232,15 @@ class OptionsDialog extends StatelessWidget {
                       onTap: () {
                         onTapTxtSair();
                       },
-                      child: Padding(
-                          padding: getPadding(
-                              left: 136, top: 31, right: 131, bottom: 5),
+                      child: Container(
+                          width: getHorizontalSize(27.00),
+                          margin: getMargin(
+                              left: 136, top: 20, right: 131, bottom: 2),
                           child: Text("lbl_sair".tr,
-                              overflow: TextOverflow.ellipsis,
+                              maxLines: null,
                               textAlign: TextAlign.center,
                               style:
-                                  AppStyle.txtNATS20.copyWith(height: 1.00)))))
+                                  AppStyle.txtNATS20.copyWith(height: 4.00)))))
             ]));
   }
 
